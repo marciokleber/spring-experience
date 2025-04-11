@@ -60,4 +60,25 @@
         </plugins>
     </build>
 
+    <profiles>
+
+        <profile>
+            <id>main</id>
+            <!-- Profile default -->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <start-class>com.github.marciokleber.springexperience.main.SpringExperienceApplication</start-class>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>serialization</id>
+            <properties>
+                <start-class>com.github.marciokleber.springexperience.serialization.SpringExperienceSerialization</start-class>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>

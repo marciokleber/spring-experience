@@ -1,4 +1,4 @@
-package com.github.marciokleber.springexperience;
+package com.github.marciokleber.springexperience.main;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,9 +11,8 @@ public class SpringExperienceApplication implements CommandLineRunner {
         SpringApplication.run(SpringExperienceApplication.class, args);
     }
 
-
     @Override
     public void run(String... args) throws Exception {
-
+        System.out.println("SPRING EXPERIENCE APPLICATION");
     }
 }
