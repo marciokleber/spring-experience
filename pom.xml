@@ -1,84 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.4</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+
     <groupId>com.github.marciokleber</groupId>
     <artifactId>spring-experience</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-experience</name>
-    <description>spring-experience</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>projects/default</module>
+        <module>projects/starter-web</module>
+    </modules>
+
     <properties>
         <java.version>21</java.version>
     </properties>
+
     <dependencies>
-
-        <!-- SPRING BOOT STATER DEPENDENCY -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <!-- SPRING BOOT STATER TEST DEPENDENCY -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- SPRING BOOT STATER WEB DEPENDENCY -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
         </plugins>
     </build>
-
-    <profiles>
-
-        <profile>
-            <id>main</id>
-            <!-- Profile default -->
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <start-class>com.github.marciokleber.springexperience.main.SpringExperienceApplication</start-class>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>serialization</id>
-            <properties>
-                <start-class>com.github.marciokleber.springexperience.serialization.SpringExperienceSerialization</start-class>
-            </properties>
-        </profile>
-    </profiles>
-
 </project>
