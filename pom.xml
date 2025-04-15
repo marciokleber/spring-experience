@@ -10,6 +10,7 @@
     <modules>
         <module>projects/default</module>
         <module>projects/starter-web</module>
+        <module>projects/state-machine</module>
     </modules>
 
     <properties>
