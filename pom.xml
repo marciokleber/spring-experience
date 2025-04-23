@@ -12,6 +12,7 @@
         <module>projects/starter-web</module>
         <module>projects/state-machine</module>
         <module>projects/rest-template</module>
+        <module>projects/spring-security</module>
     </modules>
 
     <properties>

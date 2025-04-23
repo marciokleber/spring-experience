@@ -11,7 +11,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>starter-web</artifactId>
+    <artifactId>spring-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
@@ -19,12 +19,12 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
             <version>3.4.4</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
@@ -34,7 +34,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.github.marciokleber.springstarterweb.SpringExperienceStarterWeb</mainClass>
+                    <mainClass>com.github.marciokleber.springsecurity/SpringExperienceSpringSecurity</mainClass>
                 </configuration>
             </plugin>
         </plugins>
